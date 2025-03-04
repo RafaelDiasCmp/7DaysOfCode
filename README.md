@@ -1,55 +1,138 @@
-# 🧠 Desafio #7DaysOfCode - Dia 1: Comparações de Variáveis em JavaScript e Python
+# 💻 Desafio: 7 Dias de Código
 
-Este repositório contém a solução do desafio **#7DaysOfCode** da Alura, abordando temas essenciais na programação.
+Este repositório contém a solução para o **Desafio 7 Dias de Código**, onde o objetivo foi criar uma série de programas que abordam conceitos de programação, com foco em **JavaScript** e **Python**. A cada dia, um novo desafio foi proposto, envolvendo desde conceitos básicos até a criação de programas com interatividade e lógica de controle.
 
-## 1º Dia **Comparações de Variáveis**.  
-## 🔍 Descrição do Desafio
+## 🚀 Ideias e Objetivos do Projeto
 
-No primeiro dia, o foco foi entender como o **JavaScript** e o **Python** tratam a igualdade entre variáveis, com ênfase nas diferenças entre:
-- `==` (igualdade de valor com conversão implícita de tipo) e 
-- `===` (igualdade estrita de valor e tipo) em JavaScript.
-- Comparações com `==` em Python, que consideram valor e tipo.  
+O objetivo do projeto foi explorar conceitos de lógica de programação, manipulação de dados e entrada de usuário, criando programas em JavaScript e Python para resolver problemas específicos. A cada dia, um novo desafio foi proposto e solucionado, visando a melhoria contínua do entendimento sobre como estruturar e otimizar soluções.
 
-O desafio mostrou como essas sutilezas podem gerar comportamentos inesperados, como nos exemplos:  
-```js
-console.log(false == '0');  // true
-console.log(null == undefined);  // true
-console.log(" \t\r\n" == 0);  // true
-console.log(' ' == 0);  // true
-```
-
-### 💡 O que Aprendi  
-- As diferenças fundamentais entre `==` (igualdade de valor com conversão implícita de tipo) e `===` (igualdade estrita de valor e tipo) em **JavaScript**.  
-- Como evitar problemas de conversão implícita de tipo em **JavaScript**, utilizando `===` e `!==`.  
-- Em **Python**, o operador `==` já compara valor e tipo, mas é importante usar conversões explícitas com `int()` ou `str()` para garantir comparações corretas.  
-- A importância de entender como cada linguagem trata os **tipos de variáveis** para evitar bugs inesperados e escrever códigos mais confiáveis.
-
-## 2º Dia **Entrada e Saída de dados com Variáveis**.  
-## 🔍 Descrição do Desafio  
-
-O desafio propôs criar um script que utilizasse **inputs do usuário** para gerar uma experiência interativa. No **Python**, isso é feito com `input()`, enquanto no **JavaScript** utilizamos `prompt()`.  
-O código também precisava utilizar um **controle de fluxo** com `if...else` para personalizar a resposta com base na opinião do usuário sobre a linguagem de programação escolhida. 
-
-```js
-const prompt = require('prompt-sync')();
-
-const nome = prompt('\nQual seu nome? ');
-const idade = prompt('\nQuantos anos você tem? ');
-const linguagem = prompt('\nQual linguagem de programação você está estudando? ');
-
-console.log(`\nOlá ${nome}, você tem ${idade} anos e já está aprendendo ${linguagem}!`);
-
-const gosto_linguagem = parseInt(prompt(`\nVocê gosta da linguagem ${linguagem}? 1 para SIM // 2 para NÃO `));
-
-if (gosto_linguagem === 1) {
-    console.log(`\nMuito bom ${nome}! Continue estudando e você terá muito sucesso`);
-} else {
-    console.log(`\nAhh que pena ${nome}... Já tentou aprender outras linguagens?`);
-}
 ---
 
-### 📚 Referências  
-- [Documentação do JavaScript (MDN)](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)  
-- [Documentação do Python](https://docs.python.org/3/)  
-- [#7DaysOfCode da Alura](https://www.alura.com.br/challenges)  
+## 📅 **Dia 1: Introdução à Programação e Controle de Fluxo**
+
+### 📝 Tarefa
+Criar um programa que leia a idade do usuário e determine se ele é maior de idade ou menor de idade. Exibir a mensagem correspondente na tela.
+
+### 💡 O que Aprendi
+- Como utilizar estruturas de **condição** (if, else) para tomar decisões com base na entrada do usuário.
+- Aprendi a coletar e manipular **dados numéricos** para comparar e fazer condições de controle.
+
+### 📖 Referências
+- [Estruturas condicionais em Python](https://docs.python.org/3/tutorial/controlflow.html#if-statements)
+- [Estruturas condicionais em JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else)
+
+---
+
+## 📅 **Dia 2: Manipulação de Arrays e Loops**
+
+### 📝 Tarefa
+Criar um programa que armazena números inseridos pelo usuário em um array, e ao final, exibe a soma de todos os números inseridos.
+
+### 💡 O que Aprendi
+- Como trabalhar com **arrays** em JavaScript e Python.
+- Como utilizar loops (**for** e **while**) para iterar sobre coleções de dados e realizar operações.
+- Aprendi a realizar operações matemáticas e **acumular resultados** dentro de loops.
+
+### 📖 Referências
+- [Manipulação de listas em Python](https://docs.python.org/3/tutorial/datastructures.html#more-on-lists)
+- [Manipulação de Arrays em JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
+
+---
+
+## 📅 **Dia 3: Entrada de Dados e Validação**
+
+### 📝 Tarefa
+Criar um programa que solicita ao usuário a inserção de uma idade, valida se a entrada é um número e, caso seja válido, imprime a idade, caso contrário, solicita novamente.
+
+### 💡 O que Aprendi
+- Como **validar entradas** de dados utilizando funções de conversão e condicionais.
+- A importância de garantir que os dados recebidos sejam do tipo esperado (ex: **inteiro**).
+- Como implementar uma **validação de tipo** para garantir que o usuário insira a informação correta.
+
+### 📖 Referências
+- [Entrada de dados em Python](https://docs.python.org/3/library/functions.html#input)
+- [Entrada de dados em JavaScript](https://developer.mozilla.org/en-US/docs/Web/API/Window/prompt)
+
+---
+
+## 📅 **Dia 4: Adivinhação e Laços de Repetição**
+
+### 📝 Tarefa
+Criar um jogo simples de adivinhação onde o usuário tenta acertar um número aleatório gerado pelo programa, com até 3 tentativas.
+
+### 💡 O que Aprendi
+- Como gerar números aleatórios utilizando a função `Math.random()` em JavaScript e `random.randint()` em Python.
+- A importância de utilizar **laços de repetição** para dar ao usuário várias tentativas.
+- Como **exibir mensagens interativas** com `alert()` e `prompt()` no JavaScript, e com `print()` e `input()` no Python.
+
+### 📖 Referências
+- [Gerar números aleatórios em Python](https://docs.python.org/3/library/random.html)
+- [Gerar números aleatórios em JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random)
+
+---
+
+## 📅 **Dia 5: Manipulação de Listas e Categorias**
+
+### 📝 Tarefa
+Criar um programa que permite ao usuário adicionar itens a diferentes categorias em uma lista de compras.
+
+### 💡 O que Aprendi
+- Como utilizar **listas** para armazenar diferentes tipos de dados e como manipular essas listas com funções como `push()`, `splice()`, etc.
+- A importância de organizar informações em **categorias** para melhor visualização e organização.
+
+### 📖 Referências
+- [Manipulação de listas em Python](https://docs.python.org/3/tutorial/datastructures.html#more-on-lists)
+- [Manipulação de Arrays em JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
+
+---
+
+## 📅 **Dia 6: Remover Itens de uma Lista**
+
+### 📝 Tarefa
+Adicionar a funcionalidade para remover itens da lista de compras, permitindo ao usuário excluir alimentos específicos de categorias.
+
+### 💡 O que Aprendi
+- Como utilizar a função `indexOf()` em JavaScript e `in` em Python para verificar se um item existe na lista.
+- Como **remover itens** de uma lista com `splice()` em JavaScript e `remove()` em Python.
+- A importância de tratar a **possibilidade de erro** (como tentar remover um item que não existe na lista).
+
+### 📖 Referências
+- [Método splice() em JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice)
+- [Método remove() em Python](https://docs.python.org/3/tutorial/datastructures.html#more-on-lists)
+
+---
+
+## 📅 **Dia 7: Criando uma Calculadora**
+
+### 📝 Tarefa
+Criar uma calculadora simples com as operações de soma, subtração, multiplicação e divisão, cada uma implementada em uma função diferente.
+
+### 💡 O que Aprendi
+- Como estruturar um **programa modular** com funções separadas para cada operação.
+- Como capturar **entradas do usuário** para realizar cálculos dinâmicos.
+- A importância de utilizar loops para permitir que o usuário faça várias operações sem reiniciar o programa.
+- Como **tratar erros** como a divisão por zero.
+
+### 📖 Referências
+- [Funções em Python](https://docs.python.org/3/tutorial/controlflow.html#defining-functions)
+- [Funções em JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions)
+
+---
+
+## 📚 Referências Gerais
+
+- [Python Documentation](https://docs.python.org/3/)
+- [JavaScript MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+
+---
+
+## 🚀 Conclusão
+
+Durante o desafio de 7 dias, aprendi como implementar diversas funcionalidades básicas de programação com **Python** e **JavaScript**, lidando com entradas de usuário, manipulação de listas, controle de fluxo com loops e condições, além de aprender a criar programas modulares e reutilizáveis.
+
+Espero que este repositório seja útil para você, caso precise de inspiração ou queira entender melhor como resolver problemas semelhantes. Se tiver sugestões ou comentários, fique à vontade para abrir uma **issue** ou enviar um **pull request**!
+
+---
+
+🔑 **Desenvolvido por Rafael Dias Campos**
 
